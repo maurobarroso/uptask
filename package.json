@@ -1,0 +1,46 @@
+{
+  "name": "uptask",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "desarrollo": "concurrently \"npm run dev\" \"npm run watch\"",
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js",
+    "watch": "webpack --w --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mauro Barroso",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcrypt-nodejs": "0.0.3",
+    "concurrently": "^4.1.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "html-to-text": "^5.1.1",
+    "juice": "^5.2.0",
+    "mariadb": "^2.1.1",
+    "mysql2": "^1.7.0",
+    "nodemailer": "^6.3.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.4",
+    "save": "^2.4.0",
+    "sequelize": "^5.18.4",
+    "shortid": "^2.2.15",
+    "slug": "^1.1.0",
+    "sweetalert2": "^8.17.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9"
+  }
+}
